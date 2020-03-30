@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	url: 'https://blog.nimish-dev.com',
+	url: 'https://nimish-dev.com',
 	adminUrl: 'https://blissful-raman-6fcfa5.netlify.com/admin',
 	pathPrefix: '/',
 	title: 'Blog by Nimish Gupta',
@@ -24,21 +24,25 @@ module.exports = {
 			label: 'Contact me',
 			path: '/pages/contacts',
 		},
+		{
+			label: 'Portfolio',
+			href: 'https://portfolio.nimish-gupta.dev/',
+		},
 	],
 	author: {
 		name: 'Nimish Gupta',
 		photo: '/photo.jpeg',
 		bio: 'A Pragmatic engineer learning to program deliberately.',
 		contacts: {
-			email: '',
-			facebook: '#',
-			telegram: '#',
-			twitter: '#',
-			github: '#',
+			email: 'nimishgupta18396@gmail.com',
+			facebook: 'nimishrocks',
+			telegram: 'nimish_gupta',
+			twitter: 'nimishrocks2',
+			github: 'nimish-gupta',
 			rss: '',
 			vkontakte: '',
-			linkedin: '#',
-			instagram: '#',
+			linkedin: 'nimish-gupta',
+			instagram: '',
 			line: '',
 			gitlab: '',
 			weibo: '',
