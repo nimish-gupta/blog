@@ -17,7 +17,7 @@ const Menu = ({ menu }: Props) =>
 			<ul className={styles['menu__list']}>
 				{menu.map((item) => (
 					<li className={styles['menu__list-item']} key={item.path}>
-						{item.path ? (
+						{item.path !== undefined ? (
 							<Link
 								to={item.path}
 								className={styles['menu__list-item-link']}
