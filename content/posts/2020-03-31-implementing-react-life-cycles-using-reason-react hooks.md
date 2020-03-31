@@ -5,15 +5,17 @@ slug: react-cycles-to-hooks
 draft: false
 date: 2020-03-31T09:21:06.349Z
 description: "A short and quick guide for implementing react life cycles using reason react\_hooks."
-category: 'Web, Tech, React'
+category:
+  - Web
 tags:
   - Web
   - Tech
   - React
 ---
+
 ![](/media/hooks.jpeg)
 
-After the release of [Reason React Hooks,](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) most of the developers have upgraded code base to support the hooks. Reason react community has also provided the [script](https://github.com/chenglou/upgrade-reason-react#installation) for upgradation but it just wraps the existing component using `ReasonReactCompact.wrapReasonReactForReact*`*tohooks components*.*It doesn’t add the logic for hooks as it depends on the use-case and there is no direct mapping between both the components.
+After the release of [Reason React Hooks,](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) most of the developers have upgraded code base to support the hooks. Reason react community has also provided the [script](https://github.com/chenglou/upgrade-reason-react#installation) for upgradation but it just wraps the existing component using `ReasonReactCompact.wrapReasonReactForReact*`_tohooks components_.\*It doesn’t add the logic for hooks as it depends on the use-case and there is no direct mapping between both the components.
 
 As I was upgrading the repository, I found some difficulties in upgrading the lifecycles to support the hooks. Therefore I have listed a small cheat sheet as a point of reference for conversion of those lifecycles. Before diving into the implementation using hooks a brief intro on React lifecycles and React Hooks.
 
@@ -35,10 +37,10 @@ So basically hooks are a way to create a **stateful function**with the ability t
 
 For every react component, there is a cycle attached to it from the creation of react component to its deletion inside the DOM. During this cycle, several methods are called according to the various stages of the component. This cycle is called React Lifecycle. React Component lifecycle is divided into 4 stages:-
 
-* Initialization
-* Mounting
-* Updating
-* Unmounting
+- Initialization
+- Mounting
+- Updating
+- Unmounting
 
 For visual reference that how life cycles work in react, check out [this](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/).
 
@@ -46,7 +48,7 @@ For visual reference that how life cycles work in react, check out [this](http:/
 
 In this stage, mostly the initial properties of the component are set. You can define the state, set default props and much more. Below are the methods that are called in this stage.
 
-* **[constructor](https://reactjs.org/docs/react-component.html#constructor)** — This life cycle method is called before render and is used for initializing the state or to create some of the bindings for the event listener that the component will use.
+- **[constructor](https://reactjs.org/docs/react-component.html#constructor)** — This life cycle method is called before render and is used for initializing the state or to create some of the bindings for the event listener that the component will use.
 
   ```reason
   type state = { counter: int };
@@ -57,7 +59,7 @@ In this stage, mostly the initial properties of the component are set. You can d
   [@react.component]
   let make = () => {
     let (state, setState) => React.useState(initialState);
-    
+
     "initial state is set using hooks" -> React.string;
   };
   ```
@@ -66,23 +68,24 @@ In this stage, mostly the initial properties of the component are set. You can d
 
 Below are the lifecycle methods which are called when the component is created or inserted inside the DOM.
 
-* **[render](https://reactjs.org/docs/react-component.html#render)** — This lifecycle method is used for creating the HTML content for the following component. This function will return the React elements which will be converted into the DOM elements. These should be a pure function and should not change the state while returning the elements. For more info on pure functions, check out [this](https://en.wikipedia.org/wiki/Pure_function).
+- **[render](https://reactjs.org/docs/react-component.html#render)** — This lifecycle method is used for creating the HTML content for the following component. This function will return the React elements which will be converted into the DOM elements. These should be a pure function and should not change the state while returning the elements. For more info on pure functions, check out [this](https://en.wikipedia.org/wiki/Pure_function).
 
   ```reason
   [@react.component]
   let make = (~name) => {
     // the whole body of this method comes under render lifecycle.
-    
+
     name -> React.string;
   };
   ```
-* **[componentDidMount](https://reactjs.org/docs/react-component.html#componentdidmount)**— This lifecycle method is called mostly for fetching some data or manipulating the DOM after the component is rendered, you can update the state based on the computations which you have performed in this method. This is only called after the first render of the component, for successive render check other lifecycle methods.
+
+- **[componentDidMount](https://reactjs.org/docs/react-component.html#componentdidmount)**— This lifecycle method is called mostly for fetching some data or manipulating the DOM after the component is rendered, you can update the state based on the computations which you have performed in this method. This is only called after the first render of the component, for successive render check other lifecycle methods.
 
   ```reason
   [@react.component]
   let make = (~name: string) => {
     let (counter, setCounter) = React.useState(() => 0);
-    
+
     // Enter any thing you want to enter in componentDidMount.
     React.useEffect1(
       () => {
@@ -91,7 +94,7 @@ Below are the lifecycle methods which are called when the component is created o
       },
       [||] // This is the key as this effect will be independent of any change in props.
     );
-    
+
     "counter is rendered only 1 time" -> React.string;
   }
   ```
@@ -100,7 +103,7 @@ Below are the lifecycle methods which are called when the component is created o
 
 Below listed lifecycle methods are called whenever there is a change in state or props. These lifecycle methods are called on every re-render.
 
-* **[shouldComponentUpdate](https://reactjs.org/docs/react-component.html#shouldcomponentupdate)** — This lifecycle method is called to determine whether the component will re-render when there is a change in the props or the state of the components by returning the boolean flag. By default, the component will be re-render on every state or prop change
+- **[shouldComponentUpdate](https://reactjs.org/docs/react-component.html#shouldcomponentupdate)** — This lifecycle method is called to determine whether the component will re-render when there is a change in the props or the state of the components by returning the boolean flag. By default, the component will be re-render on every state or prop change
 
   ```reason
   [@react.component]
@@ -122,13 +125,14 @@ Below listed lifecycle methods are called whenever there is a change in state or
   ```
 
   > Note: You can also use React.useMemo to create the memoized functions so that the component will not render after if the complex computation returns the same result.
-* **[componentDidUpdate](https://reactjs.org/docs/react-component.html#componentdidupdate)** — This lifecycle method is called after every re-render except for the first one. This lifecycle is generally used for doing any computation like network requests, event listener on the basis of change in props. Make sure to compare the props while updating the state, otherwise it will be stuck in infinite re-render.
+
+- **[componentDidUpdate](https://reactjs.org/docs/react-component.html#componentdidupdate)** — This lifecycle method is called after every re-render except for the first one. This lifecycle is generally used for doing any computation like network requests, event listener on the basis of change in props. Make sure to compare the props while updating the state, otherwise it will be stuck in infinite re-render.
 
   ```reason
   [@react.component]
   let make = (~name, ~) => {
     let (counter, setCounter) => React.useState(() => 0);
-    
+
     // This will allow the change of the state/props only if certain props are passed or changed to.
     React.useEffect1(
       () => {
@@ -139,7 +143,7 @@ Below listed lifecycle methods are called whenever there is a change in state or
       },
       [|name|] // Here we are listing dependency on which component will be re-rendered.
     );
-    
+
     (name ++ "is called " ++ counter -> string_of_int ++ " times.") -> React.string;
   };
   ```
@@ -148,16 +152,16 @@ Below listed lifecycle methods are called whenever there is a change in state or
 
 These lifecycle methods are called when the component is removed from the DOM.
 
-* **[componentWillUnmount](https://reactjs.org/docs/react-component.html#componentwillunmount)** — This lifecycle method is called to do all the cleanup like removing the subscriptions or event listeners on the component. This lifecycle method is just called before the component is unmounted.
+- **[componentWillUnmount](https://reactjs.org/docs/react-component.html#componentwillunmount)** — This lifecycle method is called to do all the cleanup like removing the subscriptions or event listeners on the component. This lifecycle method is just called before the component is unmounted.
 
   ```reason
   [@react.component]
   let make = () => {
     let (counter, setCounter) = React.useState(() => 0);
-    
+
     React.useEffect(() => {
       let clearTimeout = Js.Global.setTimeout(() => setCounter(_ => counter + 1), 500);
-      
+
       Some(Js.Global.clearTimeout(clearTimeout)) // This will be called when the component will be un-mounted
     });
     ("Counter is updated " ++ counter -> string_of_int ++ " times.") -> React.string;
