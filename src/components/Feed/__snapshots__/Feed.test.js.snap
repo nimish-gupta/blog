@@ -49,7 +49,7 @@ exports[`Feed renders correctly 1`] = `
       className="feed__item-readmore"
       href="/test_0"
     >
-      Read
+      1 Min Read
     </a>
   </div>
   <div
@@ -97,7 +97,7 @@ exports[`Feed renders correctly 1`] = `
       className="feed__item-readmore"
       href="/test_1"
     >
-      Read
+      1 Min Read
     </a>
   </div>
 </div>
