@@ -11,6 +11,8 @@ tags:
   - Tech
   - React
 ---
+![](/media/hooks.jpeg)
+
 After the release of [Reason React Hooks,](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) most of the developers have upgraded code base to support the hooks. Reason react community has also provided the [script](https://github.com/chenglou/upgrade-reason-react#installation) for upgradation but it just wraps the existing component using `ReasonReactCompact.wrapReasonReactForReact*`*tohooks components*.*It doesn’t add the logic for hooks as it depends on the use-case and there is no direct mapping between both the components.
 
 As I was upgrading the repository, I found some difficulties in upgrading the lifecycles to support the hooks. Therefore I have listed a small cheat sheet as a point of reference for conversion of those lifecycles. Before diving into the implementation using hooks a brief intro on React lifecycles and React Hooks.
@@ -20,8 +22,6 @@ As I was upgrading the repository, I found some difficulties in upgrading the li
 Before hooks, for sharing state logic between the components we have to depend upon some of the patterns like HOCs(Higher Order Components) or render props (function as a child). But these lead to a code which is difficult to understand as it will be wrapped with lots of other components.
 
 With hooks, you can create a custom component and can share the logic with the help of that component. As mentioned [here](https://reactjs.org/docs/hooks-intro.html).
-
-
 
 > **Hooks allow you to reuse stateful logic without changing your component hierarchy.** This makes it easy to share Hooks among many components or with the community.
 
@@ -143,8 +143,6 @@ Below listed lifecycle methods are called whenever there is a change in state or
     (name ++ "is called " ++ counter -> string_of_int ++ " times.") -> React.string;
   };
   ```
-
-
 
 #### **Lifecycle methods called while unmounting the component**
 
