@@ -4,12 +4,12 @@ module.exports = {
 	url: 'https://nimish-dev.com',
 	adminUrl: 'https://blissful-raman-6fcfa5.netlify.com/admin',
 	pathPrefix: '/',
-	title: 'Blog by Nimish Gupta',
+	title: 'Engineer Diary',
 	subtitle: 'A Pragmatic engineer learning to program deliberately.',
 	copyright: '© All rights reserved.',
 	disqusShortname: '',
 	postsPerPage: 4,
-	googleAnalyticsId: '',
+	googleAnalyticsId: 'UA-162360089-1',
 	useKatex: false,
 	menu: [
 		{
