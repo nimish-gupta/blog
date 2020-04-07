@@ -15,7 +15,7 @@ tags:
 
 ![](/media/hooks.jpeg)
 
-After the release of [Reason React Hooks,](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) most of the developers have upgraded code base to support the hooks. Reason react community has also provided the [script](https://github.com/chenglou/upgrade-reason-react#installation) for upgradation but it just wraps the existing component using `ReasonReactCompact.wrapReasonReactForReact*`_tohooks components_.\*It doesn’t add the logic for hooks as it depends on the use-case and there is no direct mapping between both the components.
+After the release of [Reason React Hooks,](https://reasonml.github.io/reason-react/blog/2019/04/10/react-hooks) most of the developers have upgraded codebase to support the hooks. Reason react community has also provided the [script](https://github.com/chenglou/upgrade-reason-react#installation) for upgradation but it just wraps the existing component using `ReasonReactCompact.wrapReasonReactForReact*`_tohooks components_.\*It doesn’t add the logic for hooks as it depends on the use-case and there is no direct mapping between both the components.
 
 As I was upgrading the repository, I found some difficulties in upgrading the lifecycles to support the hooks. Therefore I have listed a small cheat sheet as a point of reference for conversion of those lifecycles. Before diving into the implementation using hooks a brief intro on React lifecycles and React Hooks.
 
