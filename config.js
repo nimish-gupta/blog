@@ -7,7 +7,7 @@ module.exports = {
 	title: 'Engineer Diary',
 	subtitle: 'A Pragmatic engineer learning to program deliberately.',
 	copyright: '© All rights reserved.',
-	disqusShortname: '',
+	disqusShortname: 'nimish-gupta',
 	postsPerPage: 4,
 	googleAnalyticsId: 'UA-162360089-1',
 	useKatex: false,
