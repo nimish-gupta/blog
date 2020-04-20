@@ -30,8 +30,8 @@ The reason I have started this blog was to improve my writing skills (especially
 
 > If you want happiness for an hour, take a nap. If you want happiness for a day, go fishing. If you want happiness for a year, inherit a fortune. If you want happiness for a lifetime, help somebody.
 
-Also, [this](https://www.swyx.io/writing/learn-in-public/) blog from \[@swyx](https://twitter.com/swyx) explains multiple benefits of writing in public which really inspired me to start this blog.
+Also, [this](https://www.swyx.io/writing/learn-in-public/) blog from [@swyx](https://twitter.com/swyx) explains multiple benefits of writing in public which really inspired me to start this blog.
 
 
 
-Feel free to say hi \[@twitter](https://twitter.com/nimishrocks2)
+Feel free to say hi [@twitter](https://twitter.com/nimishrocks2).
