@@ -44,6 +44,7 @@
 		"gatsby": "^2.20.8",
 		"gatsby-link": "^2.3.1",
 		"gatsby-plugin-catch-links": "^2.2.1",
+		"gatsby-plugin-dark-mode": "^1.1.1",
 		"gatsby-plugin-feed": "^2.4.1",
 		"gatsby-plugin-flow": "^1.2.1",
 		"gatsby-plugin-google-gtag": "^1.2.1",

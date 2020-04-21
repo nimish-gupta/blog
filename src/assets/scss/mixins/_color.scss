@@ -1,0 +1,14 @@
+/**
+ * Anchor-font-color
+ */
+
+@mixin anchor-color($color) {
+	color: $color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color;
+	}
+}
