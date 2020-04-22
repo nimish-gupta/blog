@@ -30,7 +30,7 @@ const typographic = {
 	),
 };
 
-const buttons = {
+const button = {
 	height: '35px',
 	borderRadius: '20px',
 };
@@ -47,7 +47,7 @@ const layout = {
 const theme = {
 	color,
 	typographic,
-	buttons,
+	button,
 	layout,
 };
 
