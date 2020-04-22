@@ -2,10 +2,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { withPrefix } from 'gatsby';
+import styled from 'styled-components';
 import type { Node as ReactNode } from 'react';
 
 import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
 import ThemeProvider from './ThemeProvider';
 import GlobalStyle from './GlobalStyle';
 
@@ -16,6 +16,11 @@ type Props = {
 	socialImage?: string,
 };
 
+const Div = styled.div`
+	max-width: ${(props) => props.theme.layout.width};
+	margin: auto;
+`;
+
 const Layout = ({ children, title, description, socialImage }: Props) => {
 	const { author, url } = useSiteMetadata();
 	const metaImage = socialImage != null ? socialImage : author.photo;
@@ -23,7 +28,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
 
 	return (
 		<ThemeProvider>
-			<div className={styles.layout}>
+			<Div>
 				<Helmet>
 					<html lang="en" />
 					<title>{title}</title>
@@ -37,7 +42,7 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
 				</Helmet>
 				<GlobalStyle />
 				{children}
-			</div>
+			</Div>
 		</ThemeProvider>
 	);
 };
