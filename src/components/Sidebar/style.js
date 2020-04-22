@@ -6,12 +6,12 @@ import {
 
 export const SideBar = styled.div`
 	width: 100%;
+	float: left;
 	${breakpointSm`
      width: 41%
-    `}
-	${breakpointMd`
-    width: 33%
-  `}
+    `} ${breakpointMd`
+    width: 31.41%
+  `};
 `;
 
 export const Inner = styled.div`
