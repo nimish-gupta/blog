@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import {
 	breakpointSm,
 	breakpointMd,
-} from '../../assets/styled-components/mixins/_breakpoints';
+	margin,
+} from '../../assets/styled-components/mixins';
 
 export const SideBar = styled.div`
 	width: 100%;
@@ -10,7 +11,8 @@ export const SideBar = styled.div`
 	${breakpointSm`
      width: 41%
     `} ${breakpointMd`
-    width: 31.41%
+    width: 31.41%;
+    ${margin(0, 1, 0, 0)}
   `};
 `;
 
