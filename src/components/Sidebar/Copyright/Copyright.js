@@ -1,15 +1,17 @@
 // @flow strict
 import React from 'react';
-import styles from './Copyright.module.scss';
+import styled from 'styled-components';
+import { lighten } from 'polished';
 
 type Props = {
-  copyright: string
+	copyright: string,
 };
 
-const Copyright = ({ copyright }: Props) => (
-  <div className={styles['copyright']}>
-    {copyright}
-  </div>
-);
+const StyledDiv = styled.div`
+	color: ${(props) => lighten(0.18, props.theme.color.gray)};
+	font-size: ${(props) => props.theme.typographic.smallFontSize};
+`;
+
+const Copyright = ({ copyright }: Props) => <StyledDiv>{copyright}</StyledDiv>;
 
 export default Copyright;

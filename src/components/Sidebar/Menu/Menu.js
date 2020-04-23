@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
-import { Link } from 'gatsby';
-import styles from './Menu.module.scss';
+
+import * as Styled from './Menu.style';
 
 type Props = {
 	menu: {
@@ -12,30 +12,26 @@ type Props = {
 };
 
 const Menu = ({ menu }: Props) => (
-	<nav className={styles['menu']}>
-		<ul className={styles['menu__list']}>
+	<Styled.Menu>
+		<Styled.List>
 			{menu.map((item) => (
-				<li className={styles['menu__list-item']} key={item.path}>
+				<Styled.Item key={item.path}>
 					{item.path !== undefined && item.path !== null ? (
-						<Link
-							to={item.path}
-							className={styles['menu__list-item-link']}
-							activeClassName={styles['menu__list-item-link--active']}>
+						<Styled.ItemLink to={item.path} activeClassName={'active'}>
 							{item.label}
-						</Link>
+						</Styled.ItemLink>
 					) : (
-						<a
-							className={styles['menu__list-item-link']}
+						<Styled.ItemAnchor
 							target="_blank"
 							rel="noreferer noopener"
 							href={item.href || ''}>
 							{item.label}
-						</a>
+						</Styled.ItemAnchor>
 					)}
-				</li>
+				</Styled.Item>
 			))}
-		</ul>
-	</nav>
+		</Styled.List>
+	</Styled.Menu>
 );
 
 export default Menu;

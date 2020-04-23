@@ -2,7 +2,7 @@
 import React from 'react';
 import { getContactHref, getIcon } from '../../../utils';
 import Icon from '../../Icon';
-import styles from './Contacts.module.scss';
+import * as Styled from './Contacts.style';
 
 type Props = {
 	contacts: {
@@ -11,26 +11,25 @@ type Props = {
 };
 
 const Contacts = ({ contacts }: Props) => (
-	<div className={styles['contacts']}>
-		<ul className={styles['contacts__list']}>
+	<Styled.Contacts>
+		<Styled.List>
 			{Object.keys(contacts).map((name) => {
 				if (!contacts[name]) {
 					return null;
 				}
 				return (
-					<li className={styles['contacts__list-item']} key={name}>
-						<a
-							className={styles['contacts__list-item-link']}
+					<Styled.Item key={name}>
+						<Styled.ItemLink
 							href={getContactHref(name, contacts[name])}
 							rel="noopener noreferrer"
 							target="_blank">
 							<Icon name={name} icon={getIcon(name)} />
-						</a>
-					</li>
+						</Styled.ItemLink>
+					</Styled.Item>
 				);
 			})}
-		</ul>
-	</div>
+		</Styled.List>
+	</Styled.Contacts>
 );
 
 export default Contacts;
