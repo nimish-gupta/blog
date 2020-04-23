@@ -5,7 +5,7 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
-import * as Styled from './style';
+import * as Styled from './Post.style';
 import type { Node } from '../../types';
 
 type Props = {

@@ -3,7 +3,7 @@ import React from 'react';
 import moment from 'moment';
 import { upperFirst } from 'lodash';
 import type { Edges } from '../../types';
-import * as Styled from './style';
+import * as Styled from './Feed.style';
 
 type Props = {
 	edges: Edges,
