@@ -17,8 +17,8 @@ const Pagination = ({
 	hasNextPage,
 	hasPrevPage,
 }: Props) => {
-	const NextLink = hasNextPage ? Styled.NextLink : Styled.DisabledNavLink;
-	const PrevLink = hasPrevPage ? Styled.NextLink : Styled.DisabledNavLink;
+	const NextLink = hasNextPage ? Styled.NavLink : Styled.DisabledNavLink;
+	const PrevLink = hasPrevPage ? Styled.NavLink : Styled.DisabledNavLink;
 
 	return (
 		<Styled.Pagination>

@@ -9,7 +9,7 @@ export const SideBar = styled.div`
 	width: 100%;
 	float: left;
 	${breakpointSm`
-     width: 41%
+     width: 38%
     `} ${breakpointMd`
     width: 31.41%;
     ${margin(0, 1, 0, 0)}
