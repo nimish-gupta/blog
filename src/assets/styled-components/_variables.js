@@ -1,4 +1,4 @@
-import { lighten } from 'polished';
+import { lighten, math } from 'polished';
 
 const colorBase = '#222';
 const typoGraphicRootFrontSize = 100;
@@ -37,7 +37,7 @@ const button = {
 
 const layout = {
 	postSingleWidth: layoutPostSingleWidth,
-	postWidth: layoutPostSingleWidth - '305px',
+	postWidth: math(`${layoutPostSingleWidth} - 305px`),
 	width: '1070px',
 	breakPointSm: '685px',
 	breakPointMd: '960px',
