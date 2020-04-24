@@ -10,7 +10,8 @@
 		"clean": "rimraf .cache public",
 		"flow": "flow",
 		"lint:js": "eslint --cache --ext .js,.jsx .",
-		"lint": "concurrently \"yarn run lint:js\" \"yarn flow\"",
+		"lint": "concurrently \"yarn run lint:js\" \"yarn run lint:css\" \"yarn flow\"",
+		"lint:css": "stylelint \"src/**/*.js\"",
 		"test": "jest --config ./jest/jest-config.js",
 		"test:coverage": "jest --coverage --config ./jest/jest-config.js",
 		"test:watch": "jest --watch --config ./jest/jest-config.js"
@@ -108,6 +109,10 @@
 		"jest": "25.1.0",
 		"jest-cli": "25.1.0",
 		"react-test-renderer": "16.13.1",
-		"rimraf": "3.0.2"
+		"rimraf": "3.0.2",
+		"stylelint": "^13.3.3",
+		"stylelint-config-recommended": "^3.0.0",
+		"stylelint-config-styled-components": "^0.1.1",
+		"stylelint-processor-styled-components": "^1.10.0"
 	}
 }

@@ -21,8 +21,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.typographic.baseFontColor};
     line-height: ${(props) => props.theme.typographic.baseLineHeight};
     font-size: ${(props) => props.theme.typographic.fontSize};
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
