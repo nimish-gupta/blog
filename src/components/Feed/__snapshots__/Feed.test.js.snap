@@ -1,29 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Feed renders correctly 1`] = `
-<div
-  className="feed"
->
+<div>
   <div
-    className="feed__item"
+    className="sc-AxjAm ipQmgh"
   >
-    <div
-      className="feed__item-meta"
-    >
+    <div>
       <time
-        className="feed__item-meta-time"
+        className="sc-Axmtr cZmEry"
         dateTime="September 1, 2016"
       >
         September 2016
       </time>
       <span
-        className="feed__item-meta-divider"
+        className="sc-AxheI dpGLOE"
       />
-      <span
-        className="feed__item-meta-category"
-      >
+      <span>
         <a
-          className="feed__item-meta-category-link"
+          className="sc-AxgMl iJSCeL"
           href="/test_0"
         >
           test_0
@@ -31,47 +25,43 @@ exports[`Feed renders correctly 1`] = `
       </span>
     </div>
     <h2
-      className="feed__item-title"
+      className="sc-AxirZ bRbYIV"
     >
       <a
-        className="feed__item-title-link"
+        className="sc-AxiKw eNsVjv"
         href="/test_0"
       >
         test_0
       </a>
     </h2>
-    <p
-      className="feed__item-description"
+    <div
+      className="sc-AxhCb hoMkrG"
     >
       test_0
-    </p>
+    </div>
     <a
-      className="feed__item-readmore"
+      className="sc-AxhUy fpOGFm"
       href="/test_0"
     >
       1 Min Read
     </a>
   </div>
   <div
-    className="feed__item"
+    className="sc-AxjAm ipQmgh"
   >
-    <div
-      className="feed__item-meta"
-    >
+    <div>
       <time
-        className="feed__item-meta-time"
+        className="sc-Axmtr cZmEry"
         dateTime="September 1, 2016"
       >
         September 2016
       </time>
       <span
-        className="feed__item-meta-divider"
+        className="sc-AxheI dpGLOE"
       />
-      <span
-        className="feed__item-meta-category"
-      >
+      <span>
         <a
-          className="feed__item-meta-category-link"
+          className="sc-AxgMl iJSCeL"
           href="/test_1"
         >
           test_1
@@ -79,22 +69,22 @@ exports[`Feed renders correctly 1`] = `
       </span>
     </div>
     <h2
-      className="feed__item-title"
+      className="sc-AxirZ bRbYIV"
     >
       <a
-        className="feed__item-title-link"
+        className="sc-AxiKw eNsVjv"
         href="/test_1"
       >
         test_1
       </a>
     </h2>
-    <p
-      className="feed__item-description"
+    <div
+      className="sc-AxhCb hoMkrG"
     >
       test_1
-    </p>
+    </div>
     <a
-      className="feed__item-readmore"
+      className="sc-AxhUy fpOGFm"
       href="/test_1"
     >
       1 Min Read

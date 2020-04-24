@@ -1,22 +1,16 @@
 // @flow strict
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderWithTheme from '../../../utils/renderWithTheme';
 import Tags from './Tags';
 
 describe('Tags', () => {
-  it('renders correctly', () => {
-    const props = {
-      tags: [
-        'test_0',
-        'test_1'
-      ],
-      tagSlugs: [
-        '/test_0',
-        '/test_1'
-      ]
-    };
+	it('renders correctly', () => {
+		const props = {
+			tags: ['test_0', 'test_1'],
+			tagSlugs: ['/test_0', '/test_1'],
+		};
 
-    const tree = renderer.create(<Tags {...props} />).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+		const tree = renderWithTheme(<Tags {...props} />).toJSON();
+		expect(tree).toMatchSnapshot();
+	});
 });

@@ -2,13 +2,13 @@
 
 exports[`Pagination renders correctly 1`] = `
 <div
-  className="pagination"
+  className="sc-AxjAm gYaWGF"
 >
   <div
-    className="pagination__prev"
+    className="sc-AxirZ jJzPOj"
   >
     <a
-      className="pagination__prev-link"
+      className="sc-AxiKw buROYx"
       href="/page/1"
       rel="prev"
     >
@@ -16,10 +16,10 @@ exports[`Pagination renders correctly 1`] = `
     </a>
   </div>
   <div
-    className="pagination__next"
+    className="sc-AxirZ ucxGs"
   >
     <a
-      className="pagination__next-link"
+      className="sc-AxiKw buROYx"
       href="/page/3"
       rel="next"
     >

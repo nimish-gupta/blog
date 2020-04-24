@@ -2,26 +2,26 @@
 
 exports[`Tags renders correctly 1`] = `
 <div
-  className="tags"
+  className="sc-AxjAm jjusOk"
 >
   <ul
-    className="tags__list"
+    className="sc-AxirZ fVbfkj"
   >
     <li
-      className="tags__list-item"
+      className="sc-AxiKw eqNqKJ"
     >
       <a
-        className="tags__list-item-link"
+        className="sc-AxhCb eNEMsA"
         href="/test_0"
       >
         test_0
       </a>
     </li>
     <li
-      className="tags__list-item"
+      className="sc-AxiKw eqNqKJ"
     >
       <a
-        className="tags__list-item-link"
+        className="sc-AxhCb eNEMsA"
         href="/test_1"
       >
         test_1

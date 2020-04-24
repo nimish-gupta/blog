@@ -21,6 +21,7 @@ const Div = styled.div`
 	margin: auto;
 `;
 
+// eslint-disable-next-line object-curly-newline
 const Layout = ({ children, title, description, socialImage }: Props) => {
 	const { author, url } = useSiteMetadata();
 	const metaImage = socialImage != null ? socialImage : author.photo;

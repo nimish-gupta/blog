@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderWithTheme from '../../../utils/renderWithTheme';
 import Author from './Author';
 
 describe('Author', () => {
@@ -14,7 +14,7 @@ describe('Author', () => {
 	};
 
 	it('renders correctly', () => {
-		const tree = renderer.create(<Author {...props} />).toJSON();
+		const tree = renderWithTheme(<Author {...props} />).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 });

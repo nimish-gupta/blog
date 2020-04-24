@@ -2,18 +2,18 @@
 
 exports[`Page renders correctly 1`] = `
 <div
-  className="page"
+  className="sc-AxjAm lcHhHg"
 >
   <div
-    className="page__inner"
+    className="sc-AxirZ fpEbtS"
   >
     <h1
-      className="page__title"
+      className="sc-AxiKw gCCtAg"
     >
       test
     </h1>
     <div
-      className="page__body"
+      className="sc-AxhCb jKCdpE"
     >
       test
     </div>

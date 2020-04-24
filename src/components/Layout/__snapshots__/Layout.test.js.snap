@@ -2,7 +2,7 @@
 
 exports[`Layout renders correctly 1`] = `
 <div
-  className="layout"
+  className="sc-AxjAm iYAbQg"
 >
   test
 </div>

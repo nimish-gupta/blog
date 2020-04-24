@@ -2,15 +2,15 @@
 
 exports[`Content renders correctly 1`] = `
 <div
-  className="content"
+  className="sc-AxjAm fHGxrB"
 >
   <h1
-    className="content__title"
+    className="sc-AxirZ gbFByu"
   >
     test
   </h1>
   <div
-    className="content__body"
+    className="sc-AxiKw fZfbcy"
     dangerouslySetInnerHTML={
       Object {
         "__html": "<p>test</p>",

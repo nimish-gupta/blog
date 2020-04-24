@@ -2,26 +2,26 @@
 
 exports[`Menu renders correctly 1`] = `
 <nav
-  className="menu"
+  className="sc-AxjAm jsZtex"
 >
   <ul
-    className="menu__list"
+    className="sc-AxirZ jsodwD"
   >
     <li
-      className="menu__list-item"
+      className="sc-AxiKw fOyClS"
     >
       <a
-        className="menu__list-item-link"
+        className="sc-AxhUy jXruOG"
         href="/#0/"
       >
         Item 0
       </a>
     </li>
     <li
-      className="menu__list-item"
+      className="sc-AxiKw fOyClS"
     >
       <a
-        className="menu__list-item-link"
+        className="sc-AxhUy jXruOG"
         href="/#1/"
       >
         Item 1
