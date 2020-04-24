@@ -2,7 +2,7 @@
 
 exports[`Copyright renders correctly 1`] = `
 <div
-  className="copyright"
+  className="sc-AxjAm fzHIaf"
 >
   copyright
 </div>

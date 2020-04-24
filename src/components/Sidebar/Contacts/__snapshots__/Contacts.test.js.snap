@@ -2,22 +2,22 @@
 
 exports[`Contacts renders correctly 1`] = `
 <div
-  className="contacts"
+  className="sc-AxirZ ftseYi"
 >
   <ul
-    className="contacts__list"
+    className="sc-AxiKw gOlzom"
   >
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="mailto:#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 28 28"
         >
           <title>
@@ -30,16 +30,16 @@ exports[`Contacts renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="https://www.twitter.com/#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 26 28"
         >
           <title>
@@ -52,16 +52,16 @@ exports[`Contacts renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="https://vk.com/#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 31 28"
         >
           <title>
@@ -74,16 +74,16 @@ exports[`Contacts renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="https://github.com/#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 26 28"
         >
           <title>
@@ -96,16 +96,16 @@ exports[`Contacts renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 22 28"
         >
           <title>
@@ -118,16 +118,16 @@ exports[`Contacts renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="contacts__list-item"
+      className="sc-AxhCb yvxDE"
     >
       <a
-        className="contacts__list-item-link"
+        className="sc-AxhUy hMDfkR"
         href="https://t.me/#"
         rel="noopener noreferrer"
         target="_blank"
       >
         <svg
-          className="icon"
+          className="sc-AxjAm dmBTgV"
           viewBox="0 0 28 28"
         >
           <title>

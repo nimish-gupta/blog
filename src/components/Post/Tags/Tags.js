@@ -1,25 +1,23 @@
 // @flow strict
 import React from 'react';
-import { Link } from 'gatsby';
-import styles from './Tags.module.scss';
+import * as Styled from './Tags.style';
 
 type Props = {
-  tags: string[],
-  tagSlugs: string[]
+	tags: string[],
+	tagSlugs: string[],
 };
 
 const Tags = ({ tags, tagSlugs }: Props) => (
-  <div className={styles['tags']}>
-    <ul className={styles['tags__list']}>
-      {tagSlugs && tagSlugs.map((slug, i) => (
-        <li className={styles['tags__list-item']} key={tags[i]}>
-          <Link to={slug} className={styles['tags__list-item-link']}>
-            {tags[i]}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+	<Styled.Tags>
+		<Styled.List>
+			{tagSlugs &&
+				tagSlugs.map((slug, i) => (
+					<Styled.Item key={tags[i]}>
+						<Styled.ItemLink to={slug}>{tags[i]}</Styled.ItemLink>
+					</Styled.Item>
+				))}
+		</Styled.List>
+	</Styled.Tags>
 );
 
 export default Tags;

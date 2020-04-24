@@ -1,6 +1,6 @@
 // @flow strict
 import React from 'react';
-import renderer from 'react-test-renderer';
+import renderWithTheme from '../../utils/renderWithTheme';
 import Feed from './Feed';
 
 describe('Feed', () => {
@@ -52,7 +52,7 @@ describe('Feed', () => {
 	};
 
 	it('renders correctly', () => {
-		const tree = renderer.create(<Feed {...props} />).toJSON();
+		const tree = renderWithTheme(<Feed {...props} />).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 });

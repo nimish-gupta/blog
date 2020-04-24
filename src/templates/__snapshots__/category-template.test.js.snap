@@ -2,75 +2,73 @@
 
 exports[`CategoryTemplate renders correctly 1`] = `
 <div
-  className="layout"
+  className="sc-AxjAm iYAbQg"
 >
   <div
-    className="sidebar"
+    className="sc-fzqBZW hoYmTL"
   >
     <div
-      className="sidebar__inner"
+      className="sc-fzqNJr jfveHf"
     >
-      <div
-        className="author"
-      >
+      <div>
         <a
           href="/"
         >
           <img
             alt="Test name"
-            className="author__photo"
+            className="sc-AxirZ jjPhRy"
             height="75"
             src="/test.jpg"
             width="75"
           />
         </a>
         <h2
-          className="author__title"
+          className="sc-AxhCb gnvBFq"
         >
           <a
-            className="author__title-link"
+            className="sc-AxiKw itJoak"
             href="/"
           >
             Test name
           </a>
         </h2>
         <p
-          className="author__subtitle"
+          className="sc-AxgMl eIDxMw"
         >
           Test bio
         </p>
       </div>
       <nav
-        className="menu"
+        className="sc-fzplWN iuwUSH"
       >
         <ul
-          className="menu__list"
+          className="sc-fznyAO hMWOPK"
         >
           <li
-            className="menu__list-item"
+            className="sc-fznKkj MHosu"
           >
             <a
-              className="menu__list-item-link"
+              className="sc-fzokOt cBZVmE"
               href="/test/1/"
             >
               Test label 1
             </a>
           </li>
           <li
-            className="menu__list-item"
+            className="sc-fznKkj MHosu"
           >
             <a
-              className="menu__list-item-link"
+              className="sc-fzokOt cBZVmE"
               href="/test/2/"
             >
               Test label 2
             </a>
           </li>
           <li
-            className="menu__list-item"
+            className="sc-fznKkj MHosu"
           >
             <a
-              className="menu__list-item-link"
+              className="sc-fzokOt cBZVmE"
               href="/test/3/"
             >
               Test label 3
@@ -79,22 +77,22 @@ exports[`CategoryTemplate renders correctly 1`] = `
         </ul>
       </nav>
       <div
-        className="contacts"
+        className="sc-Axmtr geZhos"
       >
         <ul
-          className="contacts__list"
+          className="sc-AxmLO lcNzSV"
         >
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="mailto:#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 28 28"
               >
                 <title>
@@ -107,16 +105,16 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="https://t.me/#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 28 28"
               >
                 <title>
@@ -129,16 +127,16 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="https://www.twitter.com/#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 26 28"
               >
                 <title>
@@ -151,16 +149,16 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="https://github.com/#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 26 28"
               >
                 <title>
@@ -173,16 +171,16 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 22 28"
               >
                 <title>
@@ -195,16 +193,16 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </li>
           <li
-            className="contacts__list-item"
+            className="sc-fzozJi hjgLK"
           >
             <a
-              className="contacts__list-item-link"
+              className="sc-fzoLsD kLXvLI"
               href="https://vk.com/#"
               rel="noopener noreferrer"
               target="_blank"
             >
               <svg
-                className="icon"
+                className="sc-AxheI bhCBGf"
                 viewBox="0 0 31 28"
               >
                 <title>
@@ -219,49 +217,43 @@ exports[`CategoryTemplate renders correctly 1`] = `
         </ul>
       </div>
       <div
-        className="copyright"
+        className="sc-fzpans hopBRE"
       >
         Test copyright
       </div>
     </div>
   </div>
   <div
-    className="page"
+    className="sc-fzqARJ bdtTKH"
   >
     <div
-      className="page__inner"
+      className="sc-fzqNqU isRQkF"
     >
       <h1
-        className="page__title"
+        className="sc-fzoyTs bEBWUN"
       >
         test
       </h1>
       <div
-        className="page__body"
+        className="sc-fzoNJl hfseMz"
       >
-        <div
-          className="feed"
-        >
+        <div>
           <div
-            className="feed__item"
+            className="sc-fzoyAV isLhdX"
           >
-            <div
-              className="feed__item-meta"
-            >
+            <div>
               <time
-                className="feed__item-meta-time"
+                className="sc-fzoiQi dxrLFG"
                 dateTime="September 1, 2016"
               >
                 September 2016
               </time>
               <span
-                className="feed__item-meta-divider"
+                className="sc-fznWqX eUyLaV"
               />
-              <span
-                className="feed__item-meta-category"
-              >
+              <span>
                 <a
-                  className="feed__item-meta-category-link"
+                  className="sc-fznJRM eioZfz"
                   href="/test"
                 >
                   test
@@ -269,47 +261,43 @@ exports[`CategoryTemplate renders correctly 1`] = `
               </span>
             </div>
             <h2
-              className="feed__item-title"
+              className="sc-fzoLag dWLDuw"
             >
               <a
-                className="feed__item-title-link"
+                className="sc-fzoXzr jmxWLs"
                 href="/test_0"
               >
                 test_0
               </a>
             </h2>
-            <p
-              className="feed__item-description"
+            <div
+              className="sc-fzpjYC bxWuVS"
             >
               test_0
-            </p>
+            </div>
             <a
-              className="feed__item-readmore"
+              className="sc-fznxsB kXDCzk"
               href="/test_0"
             >
               1 Min Read
             </a>
           </div>
           <div
-            className="feed__item"
+            className="sc-fzoyAV isLhdX"
           >
-            <div
-              className="feed__item-meta"
-            >
+            <div>
               <time
-                className="feed__item-meta-time"
+                className="sc-fzoiQi dxrLFG"
                 dateTime="September 1, 2016"
               >
                 September 2016
               </time>
               <span
-                className="feed__item-meta-divider"
+                className="sc-fznWqX eUyLaV"
               />
-              <span
-                className="feed__item-meta-category"
-              >
+              <span>
                 <a
-                  className="feed__item-meta-category-link"
+                  className="sc-fznJRM eioZfz"
                   href="/test"
                 >
                   test
@@ -317,22 +305,22 @@ exports[`CategoryTemplate renders correctly 1`] = `
               </span>
             </div>
             <h2
-              className="feed__item-title"
+              className="sc-fzoLag dWLDuw"
             >
               <a
-                className="feed__item-title-link"
+                className="sc-fzoXzr jmxWLs"
                 href="/test_1"
               >
                 test_1
               </a>
             </h2>
-            <p
-              className="feed__item-description"
+            <div
+              className="sc-fzpjYC bxWuVS"
             >
               test_1
-            </p>
+            </div>
             <a
-              className="feed__item-readmore"
+              className="sc-fznxsB kXDCzk"
               href="/test_1"
             >
               1 Min Read
@@ -340,13 +328,13 @@ exports[`CategoryTemplate renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="pagination"
+          className="sc-fzoXWK bVNyOx"
         >
           <div
-            className="pagination__prev"
+            className="sc-fzpmMD LYqHv"
           >
             <a
-              className="pagination__prev-link"
+              className="sc-fznxKY cYsTAt"
               href="/page/1"
               rel="prev"
             >
@@ -354,10 +342,10 @@ exports[`CategoryTemplate renders correctly 1`] = `
             </a>
           </div>
           <div
-            className="pagination__next"
+            className="sc-fzpmMD jWEOzE"
           >
             <a
-              className="pagination__next-link"
+              className="sc-fznxKY cYsTAt"
               href="/page/3"
               rel="next"
             >

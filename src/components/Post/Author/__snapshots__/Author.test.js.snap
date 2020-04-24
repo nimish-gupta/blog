@@ -2,14 +2,12 @@
 
 exports[`Author renders correctly 1`] = `
 <div
-  className="author"
+  className="sc-AxjAm fPmySw"
 >
-  <p
-    className="author__bio"
-  >
+  <p>
     Test bio
     <a
-      className="author__bio-twitter"
+      className="sc-AxirZ fSOCfz"
       href="https://www.twitter.com/#"
       rel="noopener noreferrer"
       target="_blank"

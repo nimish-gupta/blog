@@ -1,7 +1,7 @@
 // @flow strict
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { useStaticQuery, StaticQuery } from 'gatsby';
+import renderWithTheme from '../../utils/renderWithTheme';
 import Post from './Post';
 import siteMetadata from '../../../jest/__fixtures__/site-metadata';
 import type { RenderCallback } from '../../types';
@@ -35,7 +35,7 @@ describe('Post', () => {
 	};
 
 	it('renders correctly', () => {
-		const tree = renderer.create(<Post {...props} />).toJSON();
+		const tree = renderWithTheme(<Post {...props} />).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
 });

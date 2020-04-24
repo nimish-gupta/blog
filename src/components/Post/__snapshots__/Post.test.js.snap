@@ -1,28 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Post renders correctly 1`] = `
-<div
-  className="post"
->
+<div>
   <a
-    className="post__home-button"
+    className="sc-fzplWN bDGJkX"
     href="/"
   >
     All Articles
   </a>
-  <div
-    className="post__content"
-  >
+  <div>
     <div
-      className="content"
+      className="sc-AxiKw gcwQvO"
     >
       <h1
-        className="content__title"
+        className="sc-AxhCb dwCsaS"
       >
         test
       </h1>
       <div
-        className="content__body"
+        className="sc-AxhUy eoQtdv"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>test</p>",
@@ -32,39 +28,37 @@ exports[`Post renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="post__footer"
+    className="sc-fzoLsD beBCOR"
   >
-    <div
-      className="meta"
-    >
+    <div>
       <p
-        className="meta__date"
+        className="sc-AxgMl hlmNXO"
       >
         Published 
         1 Sep 2016
       </p>
     </div>
     <div
-      className="tags"
+      className="sc-AxheI icmSOO"
     >
       <ul
-        className="tags__list"
+        className="sc-Axmtr fxZEnh"
       >
         <li
-          className="tags__list-item"
+          className="sc-AxmLO hoepre"
         >
           <a
-            className="tags__list-item-link"
+            className="sc-fzozJi hJwiIW"
             href="/test_0"
           >
             test_0
           </a>
         </li>
         <li
-          className="tags__list-item"
+          className="sc-AxmLO hoepre"
         >
           <a
-            className="tags__list-item-link"
+            className="sc-fzozJi hJwiIW"
             href="/test_1"
           >
             test_1
@@ -73,14 +67,12 @@ exports[`Post renders correctly 1`] = `
       </ul>
     </div>
     <div
-      className="author"
+      className="sc-AxjAm fPmySw"
     >
-      <p
-        className="author__bio"
-      >
+      <p>
         Test bio
         <a
-          className="author__bio-twitter"
+          className="sc-AxirZ fSOCfz"
           href="https://www.twitter.com/#"
           rel="noopener noreferrer"
           target="_blank"
@@ -94,7 +86,7 @@ exports[`Post renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="post__comments"
+    className="sc-fzpans izjeTV"
   />
 </div>
 `;

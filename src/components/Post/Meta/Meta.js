@@ -1,16 +1,20 @@
 // @flow strict
 import React from 'react';
 import moment from 'moment';
-import styles from './Meta.module.scss';
+import styled from 'styled-components';
 
 type Props = {
-  date: string
+	date: string,
 };
 
+const Date = styled.p`
+	font-style: italic;
+`;
+
 const Meta = ({ date }: Props) => (
-  <div className={styles['meta']}>
-    <p className={styles['meta__date']}>Published {moment(date).format('D MMM YYYY')}</p>
-  </div>
+	<div>
+		<Date>Published {moment(date).format('D MMM YYYY')}</Date>
+	</div>
 );
 
 export default Meta;

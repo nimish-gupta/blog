@@ -2,72 +2,70 @@
 
 exports[`Sidebar renders correctly 1`] = `
 <div
-  className="sidebar"
+  className="sc-fzokOt gqTEZS"
 >
   <div
-    className="sidebar__inner"
+    className="sc-fzqBZW eyNkky"
   >
-    <div
-      className="author"
-    >
+    <div>
       <a
         href="/"
       >
         <img
           alt="Test name"
-          className="author__photo"
+          className="sc-AxjAm jmjnph"
           height="75"
           src="/test.jpg"
           width="75"
         />
       </a>
       <h1
-        className="author__title"
+        className="sc-AxhCb gnvBFq"
       >
         <a
-          className="author__title-link"
+          className="sc-AxirZ cvZzWo"
           href="/"
         >
           Test name
         </a>
       </h1>
       <p
-        className="author__subtitle"
+        className="sc-AxhUy dCfmEK"
       >
         Test bio
       </p>
     </div>
     <nav
-      className="menu"
+      className="sc-fzpans iFlumi"
     >
       <ul
-        className="menu__list"
+        className="sc-fzplWN bZTKe"
       >
         <li
-          className="menu__list-item"
+          className="sc-fznyAO eakrFf"
         >
           <a
-            className="menu__list-item-link"
+            className="sc-fznZeY bwdDSP"
             href="/test/1/"
           >
             Test label 1
           </a>
         </li>
         <li
-          className="menu__list-item"
+          className="sc-fznyAO eakrFf"
         >
           <a
-            className="menu__list-item-link"
+            className="sc-fznZeY bwdDSP"
             href="/test/2/"
           >
             Test label 2
           </a>
         </li>
         <li
-          className="menu__list-item"
+          className="sc-fznyAO eakrFf"
         >
           <a
-            className="menu__list-item-link"
+            className="sc-fznZeY bwdDSP"
             href="/test/3/"
           >
             Test label 3
@@ -76,22 +74,22 @@ exports[`Sidebar renders correctly 1`] = `
       </ul>
     </nav>
     <div
-      className="contacts"
+      className="sc-AxheI gMWMtz"
     >
       <ul
-        className="contacts__list"
+        className="sc-Axmtr fTMqUs"
       >
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="mailto:#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 28 28"
             >
               <title>
@@ -104,16 +102,16 @@ exports[`Sidebar renders correctly 1`] = `
           </a>
         </li>
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="https://t.me/#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 28 28"
             >
               <title>
@@ -126,16 +124,16 @@ exports[`Sidebar renders correctly 1`] = `
           </a>
         </li>
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="https://www.twitter.com/#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 26 28"
             >
               <title>
@@ -148,16 +146,16 @@ exports[`Sidebar renders correctly 1`] = `
           </a>
         </li>
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="https://github.com/#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 26 28"
             >
               <title>
@@ -170,16 +168,16 @@ exports[`Sidebar renders correctly 1`] = `
           </a>
         </li>
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 22 28"
             >
               <title>
@@ -192,16 +190,16 @@ exports[`Sidebar renders correctly 1`] = `
           </a>
         </li>
         <li
-          className="contacts__list-item"
+          className="sc-AxmLO kPZsfX"
         >
           <a
-            className="contacts__list-item-link"
+            className="sc-fzozJi hCGVWe"
             href="https://vk.com/#"
             rel="noopener noreferrer"
             target="_blank"
           >
             <svg
-              className="icon"
+              className="sc-AxgMl fYNjux"
               viewBox="0 0 31 28"
             >
               <title>
@@ -216,7 +214,7 @@ exports[`Sidebar renders correctly 1`] = `
       </ul>
     </div>
     <div
-      className="copyright"
+      className="sc-fzoLsD hHxcjE"
     >
       Test copyright
     </div>

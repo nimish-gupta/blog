@@ -1,55 +1,47 @@
 // @flow strict
 import React from 'react';
 import moment from 'moment';
-import { Link } from 'gatsby';
 import { upperFirst } from 'lodash';
 import type { Edges } from '../../types';
-import styles from './Feed.module.scss';
+import * as Styled from './Feed.style';
 
 type Props = {
 	edges: Edges,
 };
 
 const Feed = ({ edges }: Props) => (
-	<div className={styles['feed']}>
+	<div>
 		{edges.map((edge) => (
-			<div className={styles['feed__item']} key={edge.node.fields.slug}>
-				<div className={styles['feed__item-meta']}>
-					<time
-						className={styles['feed__item-meta-time']}
+			<Styled.Item key={edge.node.fields.slug}>
+				<div>
+					<Styled.Time
 						dateTime={moment(edge.node.frontmatter.date).format(
 							'MMMM D, YYYY'
 						)}>
 						{moment(edge.node.frontmatter.date).format('MMMM YYYY')}
-					</time>
-					<span className={styles['feed__item-meta-divider']} />
-					<span className={styles['feed__item-meta-category']}>
-						<Link
-							to={edge.node.fields.categorySlug}
-							className={styles['feed__item-meta-category-link']}>
+					</Styled.Time>
+					<Styled.Divider />
+					<span>
+						<Styled.CategoryLink to={edge.node.fields.categorySlug}>
 							{edge.node.frontmatter.category}
-						</Link>
+						</Styled.CategoryLink>
 					</span>
 				</div>
-				<h2 className={styles['feed__item-title']}>
-					<Link
-						className={styles['feed__item-title-link']}
-						to={edge.node.fields.slug}>
+				<Styled.Title>
+					<Styled.TitleLink to={edge.node.fields.slug}>
 						{edge.node.frontmatter.title}
-					</Link>
-				</h2>
-				<p className={styles['feed__item-description']}>
+					</Styled.TitleLink>
+				</Styled.Title>
+				<Styled.Description>
 					{edge.node.frontmatter.description}
-				</p>
-				<Link
-					className={styles['feed__item-readmore']}
-					to={edge.node.fields.slug}>
+				</Styled.Description>
+				<Styled.ReadMore to={edge.node.fields.slug}>
 					{edge.node.fields.readingTime.text
 						.split(' ')
 						.map(upperFirst)
 						.join(' ')}
-				</Link>
-			</div>
+				</Styled.ReadMore>
+			</Styled.Item>
 		))}
 	</div>
 );
