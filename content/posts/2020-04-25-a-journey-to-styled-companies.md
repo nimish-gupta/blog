@@ -6,7 +6,7 @@ draft: false
 date: 2020-04-24T16:59:43.951Z
 description: >-
   This one is about how to move from sass to styled-components. This one will
-  contain some gotchas which I faced during the transformation.
+  contain some gotchas which I faced while going from SASS to Styled-components.
 category:
   - Web
   - Gatsby
