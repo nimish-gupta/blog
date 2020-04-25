@@ -1,6 +1,6 @@
 ---
 template: post
-title: A Journey To Styled Companents
+title: A Journey To Styled Components
 slug: journey-to-syled-components
 draft: false
 date: 2020-04-24T16:59:43.951Z
