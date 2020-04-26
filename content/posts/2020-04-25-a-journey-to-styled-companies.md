@@ -23,9 +23,9 @@ So this blog is about how I moved my entire [blog](https://github.com/nimish-gup
 
 This blog will consist of
 
-* [What](https://nimish-gupta.dev/posts/journey-to-syled-components#what)
-* [Why](https://nimish-gupta.dev/posts/journey-to-syled-components#why)
-* [How](https://nimish-gupta.dev/posts/journey-to-syled-components#how)
+* [What](#what)
+* [Why](#why)
+* [How](#how)
 
 You can skip both what and why part if you want to know how to make the change.
 
