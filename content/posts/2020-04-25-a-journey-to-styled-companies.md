@@ -264,7 +264,7 @@ The list below shows some of the challenges which I faced and how I resolve them
    });
    ```
 
-   And hopefully your tests will pass.
+   And hopefully your tests will pass. For more information about `jest` integeration with `styled-components`, checkout [here](﻿﻿https://styled-components.com/docs/tooling#jest-integration). 
 
    ![success-snapshot-testing](/media/success-snapshot-testing.gif "success-snapshot-testing")
 
