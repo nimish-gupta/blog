@@ -13,6 +13,9 @@ import {
 const GlobalStyle = createGlobalStyle`
   html {
     font-size: ${(props) => props.theme.typographic.rootFontSize};
+    color: ${(props) => props.theme.color.base};
+    background: ${(props) => props.theme.color.background};
+    
   }
 
   body {
