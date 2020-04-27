@@ -1,10 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import theme from '../../assets/styled-components/_variables';
+import getTheme from '../../assets/styled-components/_variables';
 
 const Component = ({ children }) => (
-	<ThemeProvider theme={theme}>{children}</ThemeProvider>
+	<ThemeProvider theme={getTheme('dark')}>{children}</ThemeProvider>
 );
 
 export default Component;
