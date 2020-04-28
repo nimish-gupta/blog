@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { IoMdSunny, IoMdMoon } from 'react-icons/io';
 
-import { THEME, ICONS } from '../../../constants';
+import { THEME } from '../../../constants';
 import { useThemeContext } from '../../../context/theme-context';
-import Icon from '../../Icon';
+import { marginBottom } from '../../../assets/styled-components/mixins';
 
 const ToggleContainer = styled.button`
 	position: relative;
 	display: flex;
 	justify-content: space-between;
 	background: ${(props) => props.theme.color.gray};
-	width: 80px;
+	width: 69px;
 	height: 40px;
 	border-radius: 30px;
 	border: 2px solid ${(props) => props.theme.color.grayBg};
@@ -18,6 +19,7 @@ const ToggleContainer = styled.button`
 	padding: 0.5rem;
 	overflow: hidden;
 	cursor: pointer;
+	${marginBottom(1)};
 
 	svg {
 		width: 2.5rem;
@@ -28,6 +30,7 @@ const ToggleContainer = styled.button`
 			transform: ${(props) =>
 				`${props.isLightTheme ? 'translateY(0)' : 'translateY(100px)'}`};
 		}
+
 		&:nth-child(2) {
 			transform: ${(props) =>
 				`${props.isLightTheme ? 'translateY(-100px)' : 'translateY(0)'}`};
@@ -39,8 +42,8 @@ const Toggle = () => {
 	const { theme, toggleTheme } = useThemeContext();
 	return (
 		<ToggleContainer isLightTheme={theme === THEME.Light} onClick={toggleTheme}>
-			<Icon icon={ICONS.TWITTER} />
-			<Icon icon={ICONS.RSS} />
+			<IoMdMoon />
+			<IoMdSunny />
 		</ToggleContainer>
 	);
 };
