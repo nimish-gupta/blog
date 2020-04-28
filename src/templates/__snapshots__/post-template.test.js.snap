@@ -1,3 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PostTemplate renders correctly 1`] = `<div />`;
+exports[`PostTemplate renders correctly 1`] = `
+<div
+  className="sc-AxjAm iYAbQg"
+>
+  <div>
+    <a
+      className="sc-fznyAO fYELTb"
+      href="/"
+    >
+      All Articles
+    </a>
+    <div>
+      <div
+        className="sc-AxhCb gYPumG"
+      >
+        <h1
+          className="sc-AxhUy dhdvpL"
+        >
+          test
+        </h1>
+        <div
+          className="sc-AxgMl lmrCdh"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>test</p>",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="sc-fzpans izjeTV"
+    >
+      <div>
+        <p
+          className="sc-AxheI AiPwg"
+        >
+          Published 
+          1 Sep 2016
+        </p>
+      </div>
+      <div
+        className="sc-Axmtr fmQfnZ"
+      >
+        <ul
+          className="sc-AxmLO iJcFoM"
+        >
+          <li
+            className="sc-fzozJi kNhrcD"
+          >
+            <a
+              className="sc-fzoLsD ghrqjg"
+              href="/test_0"
+            >
+              test_0
+            </a>
+          </li>
+          <li
+            className="sc-fzozJi kNhrcD"
+          >
+            <a
+              className="sc-fzoLsD ghrqjg"
+              href="/test_1"
+            >
+              test_1
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="sc-AxirZ vgqBf"
+      >
+        <p>
+          Test bio
+          <a
+            className="sc-AxiKw hiRhCj"
+            href="https://www.twitter.com/#"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <strong>
+              Test name
+            </strong>
+             on Twitter
+          </a>
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-fzplWN kIdhyk"
+    />
+  </div>
+</div>
+`;

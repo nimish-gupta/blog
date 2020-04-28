@@ -7,8 +7,9 @@ import { ThemeContext } from '../../context/theme-context';
 
 const Component = ({ children }) => {
 	const { theme, componentMounted, toggleTheme } = useTheme();
+	const isTest = process.env.NODE_ENV === 'test';
 
-	if (!componentMounted) {
+	if (!isTest && !componentMounted) {
 		return <div />;
 	}
 
