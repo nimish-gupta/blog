@@ -1,4 +1,5 @@
 # My Personal blog - https://nimish-gupta.dev
+[![Build Status](https://travis-ci.com/nimish-gupta/blog.svg?branch=master)](https://travis-ci.com/nimish-gupta/blog)
 
 ## Table of contents
 
@@ -10,7 +11,7 @@
 
 ## Features
 
-- [Lost Grid](http://lostgrid.org).
+- [Styled Components](https://styled-components.com/).
 - [Modern font stack](https://bitsofco.de/the-new-system-font-stack).
 - Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).
 - Syntax highlighting in code blocks using [PrismJS](http://prismjs.com).
