@@ -1,4 +1,5 @@
 import { lighten, math } from 'polished';
+import { THEME } from '../../constants';
 
 const typoGraphicRootFrontSize = 100;
 const typeGraphicBaseLineHeight = 1.625;
@@ -29,8 +30,8 @@ const lightColors = {
 	primary: '#5D93FF',
 };
 
-const getTheme = (type = 'light') => {
-	const theme = type === 'light' ? lightColors : darkColors;
+const getTheme = (type = THEME.Light) => {
+	const theme = type === THEME.Light ? lightColors : darkColors;
 	const color = {
 		base: theme.base,
 		primary: theme.primary,
@@ -78,8 +79,5 @@ const getTheme = (type = 'light') => {
 		layout,
 	};
 };
-
-export const lightTheme = getTheme('light');
-export const darkTheme = getTheme('dark');
 
 export default getTheme;
