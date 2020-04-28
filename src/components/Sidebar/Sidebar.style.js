@@ -27,7 +27,7 @@ export const Inner = styled.div`
         to bottom,
         ${(props) => props.theme.color.grayBorder} 0%,
         ${(props) => props.theme.color.grayBorder} 48%,
-        ${(props) => props.theme.color.white} 100%);
+        ${(props) => props.theme.color.lineBorder} 100%);
       position: absolute;
       content: '';
       width: 1px;

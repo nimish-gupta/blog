@@ -12,7 +12,7 @@ type Props = {
 
 const Icon = ({ name, icon }: Props) => (
 	<StyledIcon viewBox={icon.viewBox}>
-		<title>{name}</title>
+		{name && <title>{name}</title>}
 		<path d={icon.path} />
 	</StyledIcon>
 );
