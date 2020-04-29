@@ -20,7 +20,7 @@ describe('Post', () => {
 			html: '<p>test</p>',
 			fields: {
 				slug: '/test',
-				categorySlug: '/test-category',
+				categorySlugs: ['/test-category'],
 				tagSlugs: ['/test_0', '/test_1'],
 				readingTime: {
 					text: '1 min read',
