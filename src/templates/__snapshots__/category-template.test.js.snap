@@ -297,7 +297,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
                   className="sc-fznWqX eFZFvY"
                   href="/test"
                 >
-                  test
+                  test 
                 </a>
               </span>
             </div>
@@ -341,7 +341,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
                   className="sc-fznWqX eFZFvY"
                   href="/test"
                 >
-                  test
+                  test 
                 </a>
               </span>
             </div>

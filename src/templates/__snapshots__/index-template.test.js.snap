@@ -292,7 +292,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                   className="sc-fznWqX eFZFvY"
                   href="/test"
                 >
-                  test
+                  test 
                 </a>
               </span>
             </div>
@@ -336,7 +336,7 @@ exports[`IndexTemplate renders correctly 1`] = `
                   className="sc-fznWqX eFZFvY"
                   href="/test"
                 >
-                  test
+                  test 
                 </a>
               </span>
             </div>

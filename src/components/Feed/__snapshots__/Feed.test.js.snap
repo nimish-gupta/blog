@@ -20,7 +20,7 @@ exports[`Feed renders correctly 1`] = `
           className="sc-AxgMl iJSCeL"
           href="/test_0"
         >
-          test_0
+          test_0 
         </a>
       </span>
     </div>
@@ -64,7 +64,7 @@ exports[`Feed renders correctly 1`] = `
           className="sc-AxgMl iJSCeL"
           href="/test_1"
         >
-          test_1
+          test_1 
         </a>
       </span>
     </div>
