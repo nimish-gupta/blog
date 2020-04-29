@@ -217,7 +217,7 @@ exports[`CategoryTemplate renders correctly 1`] = `
         </ul>
       </div>
       <button
-        className="sc-fzoyAV icKlAs"
+        className="sc-fzoyAV fmclew"
         onClick={[Function]}
       >
         <svg

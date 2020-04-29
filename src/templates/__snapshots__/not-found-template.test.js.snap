@@ -217,7 +217,7 @@ exports[`NotFoundTemplate renders correctly 1`] = `
         </ul>
       </div>
       <button
-        className="sc-fzqNJr iTIfHO"
+        className="sc-fzqNJr kNNWIi"
         onClick={[Function]}
       >
         <svg

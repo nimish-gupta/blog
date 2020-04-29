@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react';
+
 import Author from './Author';
 import Comments from './Comments';
 import Content from './Content';
@@ -20,6 +21,7 @@ const Post = ({ post }: Props) => {
 	return (
 		<div>
 			<Styled.HomeButton to="/">All Articles</Styled.HomeButton>
+			<Styled.Switch />
 
 			<div>
 				<Content body={html} title={title} />

@@ -25,7 +25,7 @@ const Feed = ({ edges }: Props) => (
 						</Styled.Time>
 						<Styled.Divider />
 						{categories.map((category, index) => (
-							<span>
+							<span key={index.toString()}>
 								<Styled.CategoryLink to={edge.node.fields.categorySlugs[index]}>
 									{`${category} ${categories.length === index + 1 ? '' : ', '}`}
 								</Styled.CategoryLink>

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import { breakpointMd, marginTop } from '../../assets/styled-components/mixins';
+import Toggle from '../Sidebar/Toggle';
 
 export const Footer = styled.div`
 	max-width: ${(props) => props.theme.layout.postWidth};
@@ -48,4 +49,15 @@ export const HomeButton = styled(Link)`
       top: 30px;
       left: 30px
 	`}
+`;
+
+export const Switch = styled(Toggle)`
+	margin-left: auto;
+	margin-right: auto;
+	${breakpointMd`
+		position: fixed;
+		margin: 0;
+		top: 82px;
+		left: 30px;
+	`};
 `;

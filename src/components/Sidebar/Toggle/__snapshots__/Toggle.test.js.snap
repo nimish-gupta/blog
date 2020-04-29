@@ -2,7 +2,7 @@
 
 exports[`Toggle renders correctly 1`] = `
 <button
-  className="sc-AxjAm gxMNBC"
+  className="sc-AxjAm kNKyhO"
   onClick={[Function]}
 >
   <svg
