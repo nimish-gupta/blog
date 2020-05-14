@@ -87,6 +87,15 @@ This sheet consists of following data structures/ transformations:
 
   // identity
   A.of(id).ap(v) === v;
+
+  // homomorphism
+  A.of(f).ap(A.of(x)) === A.of(f(x));
+
+  // interchange
+  v.ap(A.of(x)) === A.of(f => f(x)).ap(v);
+
+  // composition
+  A.of(compose).ap(u).ap(v).ap(w) === u.ap(v.ap(w));
   ```
 * #### Semigroup
 
