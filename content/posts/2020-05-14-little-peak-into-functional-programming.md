@@ -1,14 +1,14 @@
 ---
 template: post
-title: Little peak into Functional Programming
-slug: funtional-programming-peak
+title: Functional Programming Laws
+slug: laws-funtional-programming
 draft: false
 date: 2020-05-14T11:00:24.041Z
 description: >-
-  This blog consists of simple learning in laws for various functional
-  programming data structures. This blog will also contain a graph which shows
-  the various dependencies between data structures. This blog can be used as a
-  cheat sheet.
+  This blog consists of various laws for various functional programming data
+  structures. This blog will also contain a graph which shows the various
+  dependencies between data structures. This blog can also be used as a cheat
+  sheet.
 category:
   - Functional Programming
   - Cheatsheet
@@ -19,6 +19,8 @@ tags:
 This sheet consists of following data structures/ transformations:
 
 * [Functor](#functor)
+* [Setoid](#setoid)
+* [Ord](#ord)
 * [Monad](#monad)
 * [Applicative Functor](#applicative-functor)
 * [Semigroup](#sesmigroup)
@@ -47,14 +49,64 @@ This sheet consists of following data structures/ transformations:
   // composition
   - compose(map(f), map(g)) === map(compose(f, g));
   ```
+* #### Setoid
 
-  ![Functor Composition Law](/media/functor_laws.png "Functor Composition Law")
+  Setoids are those data structures which are equipped with an equivalence relation. Setoid is a useful data structure when equivalence is chosen not to be equality.
+* ```javascript
+  Method
+
+  - equals :: Setoid a => a -> a -> Boolean
+
+  Laws
+
+  // reflexivity
+  - a.equals(a) === true, which we call reflexivity.
+
+  // symmetry or commutativity
+  - a.equals(b) === b.equals(a). This is symmetry or commutativity - you can give the values either way round. Remember that operations like subtraction aren’t commutative, and there are other non-commutative examples that may surprise you!
+
+  // Transivity
+  - IF a.equals(b), b.equals(c), then a.equals(c)
+
+  ```
+* #### Ord
+
+  Ord data structures contain functions **(>) - gt, (<) - lt, (>=) - gte, (<=) - lte**, which can give the rank of one structure against another.
+
+  ```javascript
+  Methods
+
+  // less than equal
+  - lte :: Ord a => a -> a -> Boolean
+
+  // greater than equal
+  - gte :: Ord a => a -> a -> Boolean
+
+  // less than
+  - lt :: Ord a => a -> a -> Boolean
+
+  // greater than
+  - gt :: Ord a => a -> a -> Boolean
+
+  Laws
+
+  // Totality
+  - a.lte(b) || b.lte(a) === true 
+
+  // Antisymmetry
+  - a.lte(b) && b.lte(a) === a.equals(b) 
+
+  // Transitivity
+  - a.lte(b) && b.lte(c) === a.lte(c)
+
+  ```
 * #### Monad
 
   Monads are pointed functors that can flatten. Any functor which defines a `join` method, has an `of` method, and obeys some laws is a monad. Monads are also called Kleisli composition.
 
   ```javascript
   Methods
+
   - join :: Monad m => m (m a) -> m a
 
   Laws
@@ -70,10 +122,6 @@ This sheet consists of following data structures/ transformations:
   // associativity
   - mcompose(mcompose(f, g), h) === mcompose(f, mcompose(g, h));
   ```
-
-  ![Monad Identity Law](/media/monad-identity.png "Monad Identity Law")
-
-  ![Monad Composition Law](/media/monad-law.png "Monad Composition Law")
 * #### Applicative Functor
 
   An applicative functor is a pointed functor with an `ap` method.
@@ -137,8 +185,6 @@ This sheet consists of following data structures/ transformations:
 
   - compose(map(f), nt) === compose(nt, map(f));
   ```
-
-  ![NT Composition Law](/media/ntlaws.png "NT Composition Law")
 
 ### References
 
