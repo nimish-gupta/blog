@@ -148,7 +148,7 @@ Above laws/definitions/diagrams are taken from below listed resources.
 * [Egghead Professor Frisby Course](https://egghead.io/courses/professor-frisby-introduces-composable-functional-javascript).
 * [Eric Elliott Functional Programming Medium Series](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea).
 * [Principal Typed Conversion with Natural Transformation](https://medium.com/@kelleyalex/principled-type-conversions-with-natural-transformations-37cdb31d8ede).
-* [Functional Programming (Javascript Fantasy Land Specification)](<* https://sanderv1992.github.io/fp/monoid/>).
+* [Functional Programming (Javascript Fantasy Land Specification)](https://sanderv1992.github.io/fp/).
 
 #### Source Code
 
