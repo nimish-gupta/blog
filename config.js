@@ -28,6 +28,10 @@ module.exports = {
 			label: 'Portfolio',
 			href: 'https://portfolio.nimish-gupta.dev/',
 		},
+		{
+			label: 'Stalk Me',
+			href: 'https://gitstalk.netlify.app/nimish-gupta/',
+		},
 	],
 	author: {
 		name: 'Nimish Gupta',
