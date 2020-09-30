@@ -1,27 +1,29 @@
 # My Personal blog - https://nimish-gupta.dev
+
 [![Build Status](https://travis-ci.com/nimish-gupta/blog.svg?branch=master)](https://travis-ci.com/nimish-gupta/blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/39d28d8b-5c3b-4eb3-8065-d099c5e38599/deploy-status)](https://app.netlify.com/sites/blissful-raman-6fcfa5/deploys)
 
 ## Table of contents
 
-- [Feature](http://github.com/nimish-gupta/blog#wfeature)
-- [Quick Start](http://github.com/nimish-gupta/blog#quick-start)
-- [Deploy with Netlify](http://github.com/nimish-gupta/blog#deploy-with-netlify)
-- [Folder Structure](http://github.com/nimish-gupta/blog#folder-structure)
-- [License](http://github.com/nimish-gupta/blog#license)
+-   [Feature](http://github.com/nimish-gupta/blog#wfeature)
+-   [Quick Start](http://github.com/nimish-gupta/blog#quick-start)
+-   [Deploy with Netlify](http://github.com/nimish-gupta/blog#deploy-with-netlify)
+-   [Folder Structure](http://github.com/nimish-gupta/blog#folder-structure)
+-   [License](http://github.com/nimish-gupta/blog#license)
 
 ## Features
 
-- [Styled Components](https://styled-components.com/).
-- [Modern font stack](https://bitsofco.de/the-new-system-font-stack).
-- Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).
-- Syntax highlighting in code blocks using [PrismJS](http://prismjs.com).
-- [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
-- Archive organized by tags and categories.
-- Pagination support.
-- [Netlify CMS](https://www.netlifycms.org) support.
-- Google Analytics.
-- Disqus Comments.
-- [Flow](https://flow.org/) static type checking.
+-   [Styled Components](https://styled-components.com/).
+-   [Modern font stack](https://bitsofco.de/the-new-system-font-stack).
+-   Beautiful typography inspired by [matejlatin/Gutenberg](https://github.com/matejlatin/Gutenberg).
+-   Syntax highlighting in code blocks using [PrismJS](http://prismjs.com).
+-   [Mobile-First](https://medium.com/@mrmrs_/mobile-first-css-48bc4cc3f60f) approach in development.
+-   Archive organized by tags and categories.
+-   Pagination support.
+-   [Netlify CMS](https://www.netlifycms.org) support.
+-   Google Analytics.
+-   Disqus Comments.
+-   [Flow](https://flow.org/) static type checking.
 
 ## Quick Start
 

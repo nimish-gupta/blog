@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/__snapshots__": true,
+    "**/*.test.js": true
+  }
+}
